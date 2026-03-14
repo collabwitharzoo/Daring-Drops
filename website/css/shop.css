@@ -1,0 +1,148 @@
+/* Daring Drops — Shop Page */
+
+.shop-hero {
+  background: var(--navy);
+  padding: var(--space-2xl) 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.shop-hero-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-xl);
+}
+
+.shop-hero-text {
+  z-index: 1;
+}
+
+.shop-hero-eyebrow {
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold-light);
+  margin-bottom: var(--space-sm);
+}
+
+.shop-hero-title {
+  font-family: var(--font-heading);
+  font-size: clamp(36px, 5vw, 56px);
+  font-weight: 300;
+  color: var(--white);
+}
+
+.shop-hero-accent {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 340px;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0.25;
+  mix-blend-mode: luminosity;
+}
+
+/* ── Filters ── */
+.shop-controls {
+  padding: var(--space-xl) 0;
+  background: var(--cream);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: var(--nav-height);
+  z-index: 50;
+  backdrop-filter: blur(8px);
+}
+
+.shop-controls-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-lg);
+  flex-wrap: wrap;
+}
+
+.filter-pills {
+  display: flex;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+}
+
+.filter-pill {
+  padding: 8px 20px;
+  border-radius: var(--radius-pill);
+  border: 1.5px solid var(--border);
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  background: transparent;
+  cursor: pointer;
+  transition: var(--ease);
+}
+
+.filter-pill:hover {
+  border-color: var(--gold);
+  color: var(--gold);
+}
+
+.filter-pill.active {
+  background: var(--gold);
+  border-color: var(--gold);
+  color: var(--white);
+}
+
+.shop-count {
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+/* ── Products Grid ── */
+.shop-section {
+  padding: var(--space-2xl) 0 var(--space-3xl);
+}
+
+.shop-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-lg);
+}
+
+.load-more-wrap {
+  text-align: center;
+  margin-top: var(--space-2xl);
+}
+
+.load-more-btn {
+  min-width: 200px;
+}
+
+.no-products {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: var(--space-3xl) 0;
+}
+
+.no-products-icon {
+  font-size: 48px;
+  margin-bottom: var(--space-lg);
+}
+
+.no-products h3 {
+  font-family: var(--font-heading);
+  font-size: 28px;
+  margin-bottom: var(--space-sm);
+  color: var(--text-secondary);
+}
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  .shop-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 480px) {
+  .shop-grid { grid-template-columns: repeat(2, 1fr); gap: var(--space-sm); }
+  .shop-hero-accent { display: none; }
+}

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daring Drops — Bold Drops, Beautiful You</title>
+  <meta name="description" content="Handcrafted jewelry — beads, bracelets & anti-tarnish pieces by Disha & Arzoo. Shop Daring Drops.">
+  <meta property="og:title" content="Daring Drops">
+  <meta property="og:description" content="Bold Drops, Beautiful You. Handcrafted jewelry by D&A.">
+  <meta property="og:image" content="assets/brand/4.png">
+
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/home.css">
+</head>
+<body class="page-body">
+
+  <!-- ── Navigation ── -->
+  <nav class="nav">
+    <div class="container">
+      <a class="nav-logo" href="index.html">
+        <img src="assets/logos/logo-short.png" alt="Daring Drops">
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="about.html">Our Story</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a class="nav-cart" href="cart.html" aria-label="Cart">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <path d="M16 10a4 4 0 01-8 0"/>
+          </svg>
+          <span class="cart-badge" id="cart-badge">0</span>
+        </a>
+        <button class="nav-hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile nav -->
+  <div class="nav-mobile">
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="about.html">Our Story</a>
+    <a href="contact.html">Contact</a>
+    <a href="cart.html">Cart</a>
+  </div>
+
+  <!-- ── Hero ── -->
+  <section class="hero">
+    <div class="hero-bg" id="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <span class="hero-eyebrow">by D&A</span>
+      <h1 class="hero-title">Bold Drops,<br><em>Beautiful You.</em></h1>
+      <p class="hero-tagline">Handcrafted · Anti-Tarnish · Gold-Toned</p>
+      <div class="hero-cta">
+        <a href="shop.html" class="btn btn-primary">Shop Now</a>
+        <a href="about.html" class="btn btn-outline" style="color:#fff;border-color:rgba(255,255,255,0.5);">Our Story</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+        <path d="M12 5v14M5 12l7 7 7-7"/>
+      </svg>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ── Marquee ── -->
+  <div class="marquee-strip">
+    <div class="marquee-track">
+      <span>Anti-Tarnish</span><span class="dot">✦</span>
+      <span>Handcrafted</span><span class="dot">✦</span>
+      <span>Gold-Toned</span><span class="dot">✦</span>
+      <span>For Bold Women</span><span class="dot">✦</span>
+      <span>Made with Love</span><span class="dot">✦</span>
+      <span>Daring Drops</span><span class="dot">✦</span>
+      <span>Anti-Tarnish</span><span class="dot">✦</span>
+      <span>Handcrafted</span><span class="dot">✦</span>
+      <span>Gold-Toned</span><span class="dot">✦</span>
+      <span>For Bold Women</span><span class="dot">✦</span>
+      <span>Made with Love</span><span class="dot">✦</span>
+      <span>Daring Drops</span><span class="dot">✦</span>
+    </div>
+  </div>
+
+  <!-- ── Trust Strip ── -->
+  <section class="trust-strip">
+    <div class="container">
+      <div class="trust-grid">
+        <div class="trust-item" data-reveal>
+          <div class="trust-item-icon">✦</div>
+          <div class="trust-item-title">Anti-Tarnish</div>
+          <div class="trust-item-desc">Jewellery that lasts</div>
+        </div>
+        <div class="trust-item" data-reveal data-delay="1">
+          <div class="trust-item-icon">♡</div>
+          <div class="trust-item-title">Handcrafted</div>
+          <div class="trust-item-desc">Made with intention</div>
+        </div>
+        <div class="trust-item" data-reveal data-delay="2">
+          <div class="trust-item-icon">✿</div>
+          <div class="trust-item-title">Free Shipping</div>
+          <div class="trust-item-desc">On orders above ₹999</div>
+        </div>
+        <div class="trust-item" data-reveal data-delay="3">
+          <div class="trust-item-icon">✉</div>
+          <div class="trust-item-title">Easy Returns</div>
+          <div class="trust-item-desc">7-day return policy</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Featured Products ── -->
+  <section class="featured-section">
+    <div class="container">
+      <p class="section-sub">Handpicked for You</p>
+      <h2 class="section-heading" data-reveal>Featured Pieces</h2>
+      <div class="featured-grid" id="featured-grid">
+        <!-- Skeletons shown then replaced by JS -->
+        <div class="product-card-skeleton"><div class="skeleton-img"></div><div class="skeleton-line short"></div><div class="skeleton-line full"></div></div>
+        <div class="product-card-skeleton"><div class="skeleton-img"></div><div class="skeleton-line short"></div><div class="skeleton-line full"></div></div>
+        <div class="product-card-skeleton"><div class="skeleton-img"></div><div class="skeleton-line short"></div><div class="skeleton-line full"></div></div>
+        <div class="product-card-skeleton"><div class="skeleton-img"></div><div class="skeleton-line short"></div><div class="skeleton-line full"></div></div>
+      </div>
+      <div style="text-align:center;margin-top:var(--space-2xl)">
+        <a href="shop.html" class="btn btn-outline">View All Jewellery</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Brand Story ── -->
+  <section class="brand-story">
+    <div class="container">
+      <div class="brand-story-inner">
+        <div class="brand-story-image" data-reveal>
+          <img src="assets/brand/5.png" alt="Daring Drops Brand Story">
+        </div>
+        <div class="brand-story-text">
+          <p class="section-sub">Our Story</p>
+          <h2 class="section-heading" style="text-align:left">Made by Two Girls<br>Who Dare to Drop</h2>
+          <p>We are Disha & Arzoo — two friends who believed jewellery should be bold, long-lasting, and truly wearable every day. Daring Drops was born from late-night craft sessions and a shared love for pieces that make a statement.</p>
+          <p>Every bracelet, bead, and earring is handpicked and crafted with care. We source anti-tarnish materials so your favourite pieces stay beautiful, not just for a season, but for years.</p>
+          <span class="brand-story-signature">Disha & Arzoo</span>
+          <a href="about.html" class="btn btn-outline">Meet Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Categories ── -->
+  <section class="categories-section">
+    <div class="container">
+      <p class="section-sub">Shop by Category</p>
+      <h2 class="section-heading" data-reveal>Find Your Style</h2>
+      <div class="categories-grid">
+        <a href="shop.html?collection=beads" class="category-card" data-reveal data-delay="1">
+          <img src="assets/brand/6.png" alt="Beads">
+          <div class="category-card-overlay">
+            <span class="category-card-label">Collection</span>
+            <h3 class="category-card-name">Beads</h3>
+            <span class="category-card-btn">Shop Now →</span>
+          </div>
+        </a>
+        <a href="shop.html?collection=bracelets" class="category-card" data-reveal data-delay="2">
+          <img src="assets/brand/bracelet-1.jpg" alt="Bracelets">
+          <div class="category-card-overlay">
+            <span class="category-card-label">Collection</span>
+            <h3 class="category-card-name">Bracelets</h3>
+            <span class="category-card-btn">Shop Now →</span>
+          </div>
+        </a>
+        <a href="shop.html?collection=anti-tarnish-jewellery" class="category-card" data-reveal data-delay="3">
+          <img src="assets/brand/8.png" alt="Anti-Tarnish Jewellery">
+          <div class="category-card-overlay">
+            <span class="category-card-label">Collection</span>
+            <h3 class="category-card-name">Anti-Tarnish</h3>
+            <span class="category-card-btn">Shop Now →</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Gallery Strip ── -->
+  <section class="gallery-section">
+    <div class="container">
+      <p class="section-sub">The Daring Drops World</p>
+      <h2 class="section-heading" data-reveal>Wear it. Own it.</h2>
+    </div>
+    <div class="gallery-strip">
+      <div class="gallery-item"><img src="assets/brand/6.png" alt="Gallery"></div>
+      <div class="gallery-item"><img src="assets/brand/7.png" alt="Gallery"></div>
+      <div class="gallery-item"><img src="assets/brand/8.png" alt="Gallery"></div>
+      <div class="gallery-item"><img src="assets/brand/9.png" alt="Gallery"></div>
+      <div class="gallery-item"><img src="assets/brand/10.png" alt="Gallery"></div>
+      <div class="gallery-item"><img src="assets/brand/bracelet-1.jpg" alt="Gallery"></div>
+      <div class="gallery-item"><img src="assets/brand/bracelet-2.jpg" alt="Gallery"></div>
+    </div>
+  </section>
+
+  <!-- ── Footer ── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/logos/logo-short.png" alt="Daring Drops">
+          <p>Handcrafted jewellery for bold, beautiful women. Anti-tarnish pieces made with love by Disha & Arzoo.</p>
+          <span class="footer-tagline">by D&A</span>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>
+            </a>
+            <a href="#" aria-label="WhatsApp">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Shop</h4>
+          <ul>
+            <li><a href="shop.html">All Jewellery</a></li>
+            <li><a href="shop.html?collection=bracelets">Bracelets</a></li>
+            <li><a href="shop.html?collection=beads">Beads</a></li>
+            <li><a href="shop.html?collection=anti-tarnish-jewellery">Anti-Tarnish</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Help</h4>
+          <ul>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="#">Shipping Info</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Size Guide</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>About</h4>
+          <ul>
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="#">Sustainability</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2024 Daring Drops. All rights reserved.</span>
+        <span style="font-family:var(--font-script);font-size:18px;color:var(--gold-light)">by D&A</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/shopify.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/nav.js"></script>
+  <script>
+    // Hero background
+    document.addEventListener('DOMContentLoaded', () => {
+      const bg = document.getElementById('hero-bg');
+      if (bg) setTimeout(() => bg.classList.add('loaded'), 100);
+
+      // Featured products
+      async function loadFeatured() {
+        const grid = document.getElementById('featured-grid');
+        if (!grid) return;
+        try {
+          const result = await ShopifyAPI.fetchAllProducts(null, null);
+          const products = result.products.slice(0, 4);
+          if (!products.length) {
+            grid.innerHTML = '<p style="grid-column:1/-1;text-align:center;color:var(--text-secondary)">Add products in your Shopify store to see them here.</p>';
+            return;
+          }
+          grid.innerHTML = products.map(p => {
+            const img = p.images.edges[0]?.node;
+            const price = p.priceRange.minVariantPrice;
+            const variantId = p.variants.edges[0]?.node?.id || '';
+            return `
+              <div class="product-card" onclick="location.href='product.html?handle=${p.handle}'">
+                <div class="product-card-image">
+                  ${img ? `<img src="${img.url}" alt="${p.title}" loading="lazy">` : '<div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;color:var(--gold);font-size:48px">✦</div>'}
+                  <button class="product-card-wishlist" onclick="event.stopPropagation()">♡</button>
+                </div>
+                <div class="product-card-body">
+                  <div class="product-card-name">${p.title}</div>
+                  <div class="product-card-price">${formatPrice(price.amount, price.currencyCode)}</div>
+                  <button class="product-card-add" onclick="event.stopPropagation();addFeatured('${variantId}',this)">Add to Cart</button>
+                </div>
+              </div>`;
+          }).join('');
+        } catch (e) {
+          grid.innerHTML = '<p style="grid-column:1/-1;text-align:center;color:var(--text-secondary)">Connect Shopify in js/main.js to load products.</p>';
+        }
+      }
+
+      window.addFeatured = async function(variantId, btn) {
+        const original = btn.textContent;
+        btn.textContent = '...';
+        btn.disabled = true;
+        try { await CartModule.addItem(variantId); }
+        finally { btn.textContent = original; btn.disabled = false; }
+      };
+
+      // Handle collection links from homepage
+      const params = new URLSearchParams(window.location.search);
+      loadFeatured();
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+/* Daring Drops — Design Tokens */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Josefin+Sans:wght@300;400;600&family=Great+Vibes&display=swap');
+
+:root {
+  /* Colors */
+  --gold:           #C9A84C;
+  --gold-light:     #E8D5A3;
+  --gold-dark:      #A07830;
+  --blush:          #F9EEE8;
+  --cream:          #FDF8F3;
+  --navy:           #1C2340;
+  --rose:           #D4748C;
+  --rose-light:     #F2C4CF;
+  --text-primary:   #2C1A0E;
+  --text-secondary: #6B5744;
+  --border:         #E8D5C4;
+  --white:          #FFFFFF;
+  --overlay:        rgba(28, 35, 64, 0.45);
+
+  /* Fonts */
+  --font-heading:  'Cormorant Garamond', Georgia, serif;
+  --font-body:     'Josefin Sans', sans-serif;
+  --font-script:   'Great Vibes', cursive;
+
+  /* Spacing scale */
+  --space-xs:   4px;
+  --space-sm:   8px;
+  --space-md:   16px;
+  --space-lg:   24px;
+  --space-xl:   40px;
+  --space-2xl:  64px;
+  --space-3xl:  96px;
+
+  /* Border radius */
+  --radius-sm:  4px;
+  --radius-md:  8px;
+  --radius-lg:  16px;
+  --radius-pill: 999px;
+
+  /* Shadows */
+  --shadow-sm:  0 2px 8px rgba(44,26,14,0.08);
+  --shadow-md:  0 4px 20px rgba(44,26,14,0.12);
+  --shadow-lg:  0 8px 40px rgba(44,26,14,0.16);
+
+  /* Transitions */
+  --ease:       0.28s cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Layout */
+  --max-width:  1200px;
+  --nav-height: 72px;
+}

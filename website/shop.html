@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop — Daring Drops</title>
+  <meta name="description" content="Shop handcrafted beads, bracelets and anti-tarnish jewellery by Daring Drops.">
+
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/shop.css">
+</head>
+<body class="page-body">
+
+  <!-- ── Navigation ── -->
+  <nav class="nav">
+    <div class="container">
+      <a class="nav-logo" href="index.html">
+        <img src="assets/logos/logo-short.png" alt="Daring Drops">
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="about.html">Our Story</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a class="nav-cart" href="cart.html" aria-label="Cart">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <path d="M16 10a4 4 0 01-8 0"/>
+          </svg>
+          <span class="cart-badge" id="cart-badge">0</span>
+        </a>
+        <button class="nav-hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="nav-mobile">
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="about.html">Our Story</a>
+    <a href="contact.html">Contact</a>
+    <a href="cart.html">Cart</a>
+  </div>
+
+  <!-- ── Shop Hero ── -->
+  <section class="shop-hero">
+    <div class="container">
+      <div class="shop-hero-inner">
+        <div class="shop-hero-text">
+          <p class="shop-hero-eyebrow">Handcrafted with Love</p>
+          <h1 class="shop-hero-title">Our Collection</h1>
+        </div>
+      </div>
+    </div>
+    <img src="assets/brand/3.png" class="shop-hero-accent" alt="">
+  </section>
+
+  <!-- ── Filters ── -->
+  <div class="shop-controls">
+    <div class="container">
+      <div class="shop-controls-inner">
+        <div class="filter-pills">
+          <button class="filter-pill active" data-collection="">All</button>
+          <button class="filter-pill" data-collection="bracelets">Bracelets</button>
+          <button class="filter-pill" data-collection="beads">Beads</button>
+          <button class="filter-pill" data-collection="anti-tarnish-jewellery">Anti-Tarnish</button>
+        </div>
+        <span class="shop-count" id="shop-count"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Products ── -->
+  <section class="shop-section">
+    <div class="container">
+      <div class="shop-grid" id="shop-grid"></div>
+      <div class="load-more-wrap" id="load-more-wrap" style="display:none">
+        <button class="btn btn-outline load-more-btn" id="load-more-btn">Load More</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Footer ── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/logos/logo-short.png" alt="Daring Drops">
+          <p>Handcrafted jewellery for bold, beautiful women. Anti-tarnish pieces made with love.</p>
+          <span class="footer-tagline">by D&A</span>
+        </div>
+        <div class="footer-col">
+          <h4>Shop</h4>
+          <ul>
+            <li><a href="shop.html">All Jewellery</a></li>
+            <li><a href="shop.html?collection=bracelets">Bracelets</a></li>
+            <li><a href="shop.html?collection=beads">Beads</a></li>
+            <li><a href="shop.html?collection=anti-tarnish-jewellery">Anti-Tarnish</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Help</h4>
+          <ul>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="#">Shipping Info</a></li>
+            <li><a href="#">Returns</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>About</h4>
+          <ul>
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2024 Daring Drops. All rights reserved.</span>
+        <span style="font-family:var(--font-script);font-size:18px;color:var(--gold-light)">by D&A</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/shopify.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/shop.js"></script>
+  <script>
+    // Pre-select collection from URL param
+    document.addEventListener('DOMContentLoaded', () => {
+      const params = new URLSearchParams(window.location.search);
+      const col = params.get('collection');
+      if (col) {
+        document.querySelectorAll('.filter-pill').forEach(p => {
+          p.classList.toggle('active', p.dataset.collection === col);
+        });
+      }
+    });
+  </script>
+</body>
+</html>
